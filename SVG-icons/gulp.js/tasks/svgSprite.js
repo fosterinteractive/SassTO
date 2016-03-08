@@ -29,7 +29,7 @@ gulp.task('svgClean', function() {
   return del(settings.dest + "/**");
 });
 
-// Step 1 - Minify and copy to new location
+// Step 2 - Minify and copy to new location
 gulp.task('svgMinify', ['svgClean'], function() {
 
 return gulp.src(settings.src)
@@ -41,7 +41,7 @@ return gulp.src(settings.src)
 
 
 
-// Step 2 - Sprite Minified files
+// Step 3 - Sprite Minified files
 // Each sub-folder's content becomes a single SVG sprite
 // in the root dest folder
 
@@ -62,15 +62,11 @@ gulp.task('createSprites', ['svgMinify'], function(){
   });
 });
 
-// Step 3 - Export SVGz gzipped files for better compression the server side gzip
-// Test to make sure they're not too big
+// Step 4 - Test to make sure they're not too big
 
 gulp.task('svgSprite', ['createSprites'], function(){
 
   return gulp.src(settings.dest + '/*.svg')
-  .pipe(rename(function(path){
-      path.extname = ''; // Trim Extension
-  }))
   .pipe(gulpIf(settings.reportEnabled,
       sizeReport(settings.reportSettings)
     )

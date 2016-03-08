@@ -114,18 +114,31 @@ See
 #Controlling SVG Sizes in CSS#
 
 * It's crazy but in IE all SVG's have a fixes size of 300x150px by default
-* Wrap you SVG in something to control the size
+* Wrap you SVG in something to control the size on the wrapper
+* Either define fixes sizes (with breakpoints as needed) or apply and intrinsic ratio to the wrapper using something like
+* https://github.com/at-import/toolkit#intrinsic-ratios
 
+## Example Mixin for Sizing and Icon in button ##
 
+````
+See /scss/global/_g-svg.scss
+````
 http://www.sassmeister.com/gist/5e0ccf832283a5a8dc8f
 
 
 
 #Controlling SVG Color in CSS#
 
+CurrentColor
+
+CSS w/ Fill and Stroke
+
+
 # Other Approaches and Follow up #
 
 [Una's http://una.im/svg-icons#💁
+Cloud Four Icon Process
+Responsive Icons
 
 
 

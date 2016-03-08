@@ -152,9 +152,6 @@ category: Base - Colors
   width: auto;
   height: auto; }
 
-svg {
-  fill: currentColor; }
-
 /**
  * @file
  *
@@ -191,6 +188,7 @@ category: Components - Buttons
   height: 4rem;
   display: inline-block;
   background-color: #ffffff;
+  fill: currentColor;
   color: red; }
   .c-btn--svg .svg {
     position: absolute;
@@ -208,7 +206,9 @@ category: Components - Buttons
   height: 4rem;
   display: inline-block;
   background-color: #ffffff;
-  fill: red; }
+  fill: green;
+  stroke: blue;
+  stroke-width: 2px; }
   .c-btn--fill .svg {
     position: absolute;
     top: 1rem;
@@ -216,7 +216,9 @@ category: Components - Buttons
     width: 2rem;
     height: 2rem; }
   .c-btn--fill:hover, .c-btn--fill:focus, .c-btn--fill:active {
-    background-color: #e6e7e8; }
+    background-color: #e6e7e8;
+    fill: purple;
+    stroke: gold; }
 
 /*doc
 ---
