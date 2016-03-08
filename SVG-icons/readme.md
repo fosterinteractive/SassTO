@@ -117,6 +117,7 @@ See
 * Wrap you SVG in something to control the size on the wrapper
 * Either define fixes sizes (with breakpoints as needed) or apply and intrinsic ratio to the wrapper using something like
 * https://github.com/at-import/toolkit#intrinsic-ratios
+http://codepen.io/fosterinteractive/pen/oxxLzB
 
 ## Example Mixin for Sizing and Icon in button ##
 
@@ -130,8 +131,13 @@ http://www.sassmeister.com/gist/5e0ccf832283a5a8dc8f
 #Controlling SVG Color in CSS#
 
 CurrentColor
+https://css-tricks.com/cascading-svg-fill-color/
 
 CSS w/ Fill and Stroke
+
+````
+See /scss/components/c-btn.scss
+````
 
 
 # Other Approaches and Follow up #
