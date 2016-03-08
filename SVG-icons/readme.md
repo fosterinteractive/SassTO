@@ -72,7 +72,26 @@ SVG's as image files
 * This SVG sprite file is called as an external asset like a image or JS file.
 * It gets cached by the browser and is only 1 extra request
 
+````
+// sprite-social.svg File //
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="facebook" viewBox="-463 265 32 32">
+  <path d=""/>
+</symbol>
+<symbol id="instagram" viewBox="-422 224.6 113.4 113.4">
+  <path d=""/>
+</symbol>
+</svg>
+````
 
+````
+// HTML FIle
+
+ <svg class="svg" alt="Facebook"><use xlink:href="../svg/sprite-social.svg#facebook"></use></svg>
+
+ <svg class="svg" alt="Facebook"><use xlink:href="../svg/sprite-social.svg#instagram"></use></svg>
+
+````
 #Gulp SVG Tasks#
 
 ````
@@ -88,7 +107,7 @@ See
 2. It minifies the many small SVG's, removing all stroke and fill colors so you can alter them with CSS.
 3. New Minified files are copied from /svg-src to /svg.
 4. Gulp looks for sub-folders inside /svg-src makes a sprite out of any SVG files in these folders.
-5. The svgsprite is named after the folder.
+5. The svgsprite is named after the folder and is created in the /svg root folder.
 
 
 
