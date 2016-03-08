@@ -2,9 +2,14 @@
 
 # Let's Get Setup #
 
-Download this repo to your local machine
-Expand on your local desktop
+Download this repo to your local machine (git clone or zip download)
 
+https://github.com/fosterinteractive/SassTO
+
+````
+cd /your-folder/SassTO/SVG-icons
+npm install
+````
 
 ## Introductions ##
 - What's your focus / work / area of interest?
@@ -110,6 +115,11 @@ See
 4. Gulp looks for sub-folders inside /svg-src makes a sprite out of any SVG files in these folders.
 5. The svgsprite is named after the folder and is created in the /svg root folder.
 
+LET's GO A TRY IT OUT
+
+````
+$ gulp svgSprite
+````
 
 #Controlling SVG Sizes in CSS#
 
@@ -117,7 +127,7 @@ See
 * Wrap you SVG in something to control the size on the wrapper
 * Either define fixes sizes (with breakpoints as needed) or apply and intrinsic ratio to the wrapper using something like
 * https://github.com/at-import/toolkit#intrinsic-ratios
-http://codepen.io/fosterinteractive/pen/oxxLzB
+* [Example Codepen](http://codepen.io/fosterinteractive/pen/oxxLzB)
 
 ## Example Mixin for Sizing and Icon in button ##
 
@@ -142,8 +152,9 @@ See /scss/components/c-btn.scss
 
 # Other Approaches and Follow up #
 
-[Una's http://una.im/svg-icons#💁
-Cloud Four Icon Process
+http://una.im/svg-icons#💁 (Great explanation why external SVG icons)
+http://blog.cloudfour.com/our-svg-icon-process/
+* Pretty cool with reusing icons to be DRY (like arrows in different directions)
 Responsive Icons
 
 
