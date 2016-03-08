@@ -151,10 +151,20 @@ CSS w/ Fill and Stroke
 See /scss/components/c-btn.scss
 ````
 
+# Let's Try it out #
+
+````
+$ gulp watch
+
+````
+* This will spin up browserSync which will show the content of the /example/index.html
+* Make changes to scss/components/_c-btn.scss to see how color and layout works.
 
 # Other Approaches and Follow up #
 
-http://una.im/svg-icons#💁 (Great explanation why external SVG icons are best - Has boilerplate Icon Project)
+http://una.im/svg-icons#💁
+
+* Great explanation why external SVG icons are best - Has boilerplate Icon Project
 
 http://blog.cloudfour.com/our-svg-icon-process/
 * Pretty cool with reusing icons to be DRY (like arrows in different directions)
