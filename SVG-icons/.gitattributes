@@ -1,0 +1,4 @@
+# Treat Minfied Files as binary
+
+css/**/*css -diff
+svg/**/*.svg -diff

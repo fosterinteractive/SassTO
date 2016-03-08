@@ -1,0 +1,16 @@
+/**
+ * @file
+ *
+ * This partial is used to define generic page layout items common between all
+ * EG the "wrapper Stuff"
+ */
+
+body {
+  padding: 2rem;
+  background-color: #ddeeee;
+}
+
+section {
+  max-width: 400px;
+  margin: 2rem auto;
+}

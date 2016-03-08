@@ -58,9 +58,34 @@ https://www.viget.com/articles/5-tips-for-saving-svg-for-the-web-with-illustrato
 
 # Using SVG's #
 
-* <img> tags
-* In the DOM of an HTML document in an <SVG> tag
-*
+SVG's as image files
+````
+<img src ="./svg/spiral.svg" />
+
+* Can't edit the SVG in any way w/ CSS
+````
+
+#External SVG Sprites#
+
+* A number of SVG icons are bended together into 1 SVG
+* Each SVG icon gets wrapped in a <symbol>
+* Symbol Element are a "library" of SVG that can be "placed" inside the DOM
+* This SVG sprite file is called as an external asset like a image or JS file.
+* It gets cached and is only 1 extra request
+
+
+#Gulp SVG Tasks#
+
+See /gulp.js/config.js
+See /gulp.js/tasks/svgSprite
+
+
+http://www.sassmeister.com/gist/5e0ccf832283a5a8dc8f
+
 
 
 http://una.im/svg-icons#💁
+
+
+
+

@@ -1,0 +1,309 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+img, video {
+  max-width: 100%;
+  height: auto; }
+
+/*doc
+---
+title: Colors
+name: color-100
+category: Base - Colors
+---
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#040303;"><br><br><br><br><br></div>
+      <pre class="text-center">$black</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#ffffff;"><br><br><br><br><br></div>
+      <pre class="text-center">$white</pre>
+    </div>
+
+    <h1>Greys</h1>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#939598;"><br><br><br><br><br></div>
+      <pre class="text-center">grey-base</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#231f20;"><br><br><br><br><br></div>
+      <pre class="text-center">grey-dark</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#afafaf;"><br><br><br><br><br></div>
+      <pre class="text-center">grey-mediumlight</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#e6e7e8;"><br><br><br><br><br></div>
+      <pre class="text-center">grey-light</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:#f1f2f2;"><br><br><br><br><br></div>
+      <pre class="text-center">grey-xlight</pre>
+    </div>
+
+    <h1>Main Colors</h1>
+
+    <h1>Debug Colors</h1>
+    <p>Array of colors for /global/mixin/_debug-layout.scss</p>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:rgb(0, 0, 160);"><br><br><br><br><br></div>
+      <pre class="text-center">$debug-blue</pre>
+    </div>
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:rgb(160, 0, 0);"><br><br><br><br><br></div>
+      <pre class="text-center">$debug-red</pre>
+    </div>
+
+
+    <div class="sg__wrapper--sml-light-grey">
+      <div style="background:rgb(0, 160, 0);"><br><br><br><br><br></div>
+      <pre class="text-center">$debug-green</pre>
+    </div>
+
+  </div>
+</div>
+
+*/
+
+.u-clearfix:before,
+.u-clearfix:after {
+  display: table;
+  content: ''; }
+
+
+.u-clearfix:after {
+  clear: both; }
+
+
+.u-color--fg-white {
+  color: #ffffff; }
+
+
+.u-color--fg-grey {
+  color: #939598; }
+
+
+.u-color--bg-white {
+  background-color: #ffffff; }
+
+
+.u-color--bg-grey {
+  background-color: #939598; }
+
+
+.u-color--bg-grey-light {
+  background-color: #e6e7e8; }
+
+
+.u-color--bg-grey-xlight {
+  background-color: #f1f2f2; }
+
+
+.c-logo__hidden-text,
+.u-text-hide {
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+
+.visuallyhidden,
+.u-visually--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px; }
+  
+  .visuallyhidden.focusable:active,
+  .visuallyhidden.focusable:focus,
+  .u-visually--hidden.focusable:active,
+  .u-visually--hidden.focusable:focus {
+    clip: auto;
+    position: static;
+    margin: 0;
+    width: auto;
+    height: auto;
+    overflow: visible; }
+
+
+.visuallyshown,
+.u-visually--shown {
+  clip: auto;
+  clip: rect(auto auto auto auto);
+  position: static;
+  overflow: visible;
+  margin: 0;
+  width: auto;
+  height: auto; }
+
+svg {
+  fill: currentColor; }
+
+/**
+ * @file
+ *
+ * This partial is used to define generic page layout items common between all
+ * EG the "wrapper Stuff"
+ */
+body {
+  padding: 2rem;
+  background-color: #ddeeee; }
+
+section {
+  max-width: 400px;
+  margin: 2rem auto; }
+
+/*doc
+---
+title: Buttons - Icons Only
+name: c-btn-500
+category: Components - Buttons
+---
+
+```html_example
+<a class="c-btn--svg" href="#">
+  <svg class="svg" alt="Instagram"><use xlink:href="../svg/sprite-social.svg#instagram"></use></svg>
+</a>
+
+
+```
+
+*/
+.c-btn--svg {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  background-color: #ffffff;
+  color: red; }
+  .c-btn--svg .svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem; }
+  .c-btn--svg:hover, .c-btn--svg:focus, .c-btn--svg:active {
+    background-color: #ffddff;
+    color: blue; }
+
+.c-btn--fill {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  background-color: #ffffff;
+  fill: red; }
+  .c-btn--fill .svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem; }
+  .c-btn--fill:hover, .c-btn--fill:focus, .c-btn--fill:active {
+    background-color: #e6e7e8; }
+
+/*doc
+---
+title: Logo
+name: c-logo-100
+category: Components - Logo
+---
+
+```html_example
+<div class="styleguide__wrapper--med-black styleguide__logo"><!-- Only used in style guide -->
+  <div class="c-logo">
+    <div class="c-logo__svg-wrapper">
+      <a class="c-logo__link" href="#">
+        <svg class="c-logo__svg--shapes"><use xlink:href="/svg/sprite-ui.svg#logo"></use></svg>
+        <div class="c-logo__hidden-text">Logo</div>
+      </a>
+    </div>
+  </div>
+</div>
+```
+*/
+/*doc
+---
+title: Logo (Mobile Size)
+name:  c-logo-200
+category: Components - Logo
+---
+
+```html_example
+<div class="styleguide__wrapper--tiny-black"><!-- Only used in style guide -->
+  <div class="c-logo">
+    <div class="c-logo__svg-wrapper">
+      <a class="c-logo__link" href="#">
+        <svg class="c-logo__svg--shapes"><use xlink:href="/svg/sprite-ui.svg#logo"></use></svg>
+        <div class="c-logo__hidden-text">Logo</div>
+      </a>
+    </div>
+  </div>
+</div>
+```
+*/
+
+.c-logo {
+  float: left;
+  width: 1.5rem; }
+  @media (min-width: 56.25em) {
+    
+    .c-logo {
+      float: none;
+      margin-bottom: 2.625rem;
+      padding-left: 2.25rem;
+      width: auto; } }
+
+
+.c-logo__link--white {
+  color: #ffffff; }
+  
+  .c-logo__link--white:hover,
+  .c-logo__link--white:active,
+  .c-logo__link--white:focus {
+    color: #ffffff; }
+
+
+.c-logo__svg--shapes {
+  width: 1.5rem;
+  height: 3.5rem; }
+  @media (min-width: 56.25em) {
+    
+    .c-logo__svg--shapes {
+      width: 2.625rem;
+      height: 6.3125rem; } }
+
+
+.c-logo__svg--words {
+  display: none;
+  position: relative;
+  top: 3.125rem;
+  left: 0.5rem;
+  width: 8.25rem;
+  height: 5.6875rem; }
+  @media (min-width: 56.25em) {
+    
+    .c-logo__svg--words {
+      display: inherit; } }
+
+
+.c-logo__hidden-text {
+  height: 0; }
+
+/*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,84 @@
+// SVG Global Styles
+
+// Default Color fill
+svg {
+  fill: currentColor;
+}
+
+
+
+
+// // Fixed size, centered SVG in fixed size container
+// // Include from container
+
+@mixin svg-centered($svg-width, $svg-height, $wrapper-width, $wrapper-height, $svg-class: svg) {
+
+  @if ($wrapper-width < $svg-width or $wrapper-height < $svg-height) {
+    @error ('Wrapper can not be larger the the svg');
+  }
+
+  position: relative;
+  width: $wrapper-width;
+  height: $wrapper-height;
+
+  .#{$svg-class} {
+    position: absolute;
+    top: ($wrapper-height - $svg-height) / 2;
+    left: ($wrapper-width - $svg-width) / 2;
+    width: $svg-width;
+    height: $svg-height;
+  }
+}
+
+// // Prefix icon with a mult-line link with vertically centered (middle or top) svg to the left
+// // Apply to parent container with an SVG of the specified class inside
+
+$baseline: rem($base-line-height) !default;
+
+@mixin svg-inline(
+  $baseline, // font baseline
+  $svg-width, // SVG width (units same as typography)
+  $svg-height, // SVG height
+  $svg-class, // Class for the SVG inside the parent
+  $svg-pad-right, // padding on left side of SVG
+  $svg-pad-left, // padding on right side of SVG
+  $container-vertical-padding, // Top & bottom padding for container
+  $container-horizontal-padding : 0, // Left and right padding for container
+  $alignment: 'middle') { // Align 'middle' or 'top'
+
+  position: relative;
+  padding-left: $svg-pad-left + $svg-width + $svg-pad-right + $container-horizontal-padding;
+
+  @if ($container-horizontal-padding != '0') {
+    padding-right: $container-horizontal-padding;
+  }
+
+  @if ($container-vertical-padding != 0) {
+    padding-top: $container-vertical-padding;
+    padding-bottom: $container-vertical-padding;
+  }
+
+  // SVG positioning
+  .#{$svg-class} {
+    display: block;
+    position: absolute;
+
+    left: 0 + $svg-pad-left + $container-horizontal-padding;
+    margin-top: (-$svg-height / 2);
+    width: $svg-width;
+    height: $svg-height;
+
+    // SVG vertical positioning
+
+    // Vertical Align icon in middle of parent
+    @if ($alignment == 'middle') {
+      top: 50%;
+    }
+    @if ($alignment == 'top') {
+      top: ($baseline / 2) + $container-vertical-padding;
+    }
+
+  }
+}
+
+

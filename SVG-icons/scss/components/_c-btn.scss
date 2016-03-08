@@ -1,0 +1,51 @@
+/*doc
+---
+title: Buttons - Icons Only
+name: c-btn-500
+category: Components - Buttons
+---
+
+```html_example
+<a class="c-btn--svg" href="#">
+  <svg class="svg" alt="Instagram"><use xlink:href="../svg/sprite-social.svg#instagram"></use></svg>
+</a>
+
+
+```
+
+*/
+
+// Use color property to color buttons
+.c-btn--svg {
+  @include svg-centered(2rem, 2rem, 4rem, 4rem, 'svg');
+  display: inline-block;
+  background-color: #ffffff;
+
+  color: red;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ffddff;
+    color: blue;
+  }
+}
+
+// Use Fill Property
+.c-btn--fill {
+  @include svg-centered(2rem, 2rem, 4rem, 4rem, 'svg');
+  display: inline-block;
+  background-color: #ffffff;
+
+  fill: red;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: palette(grey, light);
+  }
+}
+
+
+
+
