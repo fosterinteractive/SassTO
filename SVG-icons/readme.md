@@ -7,8 +7,9 @@ Download this repo to your local machine (git clone or zip download)
 https://github.com/fosterinteractive/SassTO
 
 ````
-cd /your-folder/SassTO/SVG-icons
-npm install
+$ cd /your-folder/SassTO/SVG-icons
+$ npm install
+$ bower install
 ````
 
 ## Introductions ##
@@ -151,7 +152,8 @@ CSS w/ Fill and Stroke
 See /scss/components/c-btn.scss
 ````
 
-# Let's Try it out #
+# Let's Try It Out #
+Jump into your text editor and checkout /example/index.html
 
 ````
 $ gulp watch
@@ -161,6 +163,8 @@ $ gulp watch
 * Make changes to scss/components/_c-btn.scss to see how color and layout works.
 
 # Other Approaches and Follow up #
+
+##Smart People's Opinions on SVG Icons##
 
 http://una.im/svg-icons#💁
 
@@ -174,7 +178,7 @@ http://blog.cloudfour.com/our-svg-icon-process/
 * https://www.smashingmagazine.com/2014/03/rethinking-responsive-svg/
 * http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
 
-##Queen of SVG Awesome is Sara Soueidan##
+##Queen of SVG is Sara Soueidan##
 
 * Smashing Book 5
 * https://sarasoueidan.com/
