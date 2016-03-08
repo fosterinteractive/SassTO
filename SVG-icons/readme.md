@@ -20,21 +20,21 @@ npm install
 ### Compass End of Life ###
 ### Eyeglass NPM manager for Sass ###
 * https://github.com/sass-eyeglass/eyeglass
-* Automatically downloads, managed, and inteligently loads required Sass components
+* Automatically downloads, managed, and intelligently loads required Sass components
+
 ### Mainspring Boilerplate for Our Projects ###
 * https://github.com/fosterinteractive/mainspring
 * The SVG lesson today is a smaller component of mainspring
 
 # SVG Intro #
 
-Someone's done this already - Let's check out the awsome SVG handbook.
+Someone's done this already - Let's check out the awesome SVG handbook.
+
 http://svgpocketguide.com/book/#section-1
 
-Square Example
-http://codepen.io/jonitrythall/pen/525df2422b0ebc54c71a48d27534ea5e
+Square Example - http://codepen.io/jonitrythall/pen/525df2422b0ebc54c71a48d27534ea5e
 
-Poly Line Example
-http://codepen.io/jonitrythall/pen/558d73574360c37158f4ad03214c7eb9
+Poly Line Example - http://codepen.io/jonitrythall/pen/558d73574360c37158f4ad03214c7eb9
 
 # Why Better then Icon Fonts #
 
@@ -121,6 +121,8 @@ LET's GO A TRY IT OUT
 $ gulp svgSprite
 ````
 
+New Icons too add? Just put them in the right folder (root to keep as separate svg files, one or more sub-folders to make one or more SVG sprites.
+
 #Controlling SVG Sizes in CSS#
 
 * It's crazy but in IE all SVG's have a fixes size of 300x150px by default
@@ -152,11 +154,19 @@ See /scss/components/c-btn.scss
 
 # Other Approaches and Follow up #
 
-http://una.im/svg-icons#💁 (Great explanation why external SVG icons)
+http://una.im/svg-icons#💁 (Great explanation why external SVG icons are best - Has boilerplate Icon Project)
+
 http://blog.cloudfour.com/our-svg-icon-process/
 * Pretty cool with reusing icons to be DRY (like arrows in different directions)
-Responsive Icons
 
+##Responsive Icons##
 
+* https://www.smashingmagazine.com/2014/03/rethinking-responsive-svg/
+* http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/
+
+##Queen of SVG Awesome is Sara Soueidan##
+
+* Smashing Book 5
+* https://sarasoueidan.com/
 
 

@@ -112,7 +112,6 @@ category: Base - Colors
   background-color: #f1f2f2; }
 
 
-.c-logo__hidden-text,
 .u-text-hide {
   text-indent: 120%;
   white-space: nowrap;
@@ -219,93 +218,5 @@ category: Components - Buttons
     background-color: #e6e7e8;
     fill: purple;
     stroke: gold; }
-
-/*doc
----
-title: Logo
-name: c-logo-100
-category: Components - Logo
----
-
-```html_example
-<div class="styleguide__wrapper--med-black styleguide__logo"><!-- Only used in style guide -->
-  <div class="c-logo">
-    <div class="c-logo__svg-wrapper">
-      <a class="c-logo__link" href="#">
-        <svg class="c-logo__svg--shapes"><use xlink:href="/svg/sprite-ui.svg#logo"></use></svg>
-        <div class="c-logo__hidden-text">Logo</div>
-      </a>
-    </div>
-  </div>
-</div>
-```
-*/
-/*doc
----
-title: Logo (Mobile Size)
-name:  c-logo-200
-category: Components - Logo
----
-
-```html_example
-<div class="styleguide__wrapper--tiny-black"><!-- Only used in style guide -->
-  <div class="c-logo">
-    <div class="c-logo__svg-wrapper">
-      <a class="c-logo__link" href="#">
-        <svg class="c-logo__svg--shapes"><use xlink:href="/svg/sprite-ui.svg#logo"></use></svg>
-        <div class="c-logo__hidden-text">Logo</div>
-      </a>
-    </div>
-  </div>
-</div>
-```
-*/
-
-.c-logo {
-  float: left;
-  width: 1.5rem; }
-  @media (min-width: 56.25em) {
-    
-    .c-logo {
-      float: none;
-      margin-bottom: 2.625rem;
-      padding-left: 2.25rem;
-      width: auto; } }
-
-
-.c-logo__link--white {
-  color: #ffffff; }
-  
-  .c-logo__link--white:hover,
-  .c-logo__link--white:active,
-  .c-logo__link--white:focus {
-    color: #ffffff; }
-
-
-.c-logo__svg--shapes {
-  width: 1.5rem;
-  height: 3.5rem; }
-  @media (min-width: 56.25em) {
-    
-    .c-logo__svg--shapes {
-      width: 2.625rem;
-      height: 6.3125rem; } }
-
-
-.c-logo__svg--words {
-  display: none;
-  position: relative;
-  top: 3.125rem;
-  left: 0.5rem;
-  width: 8.25rem;
-  height: 5.6875rem; }
-  @media (min-width: 56.25em) {
-    
-    .c-logo__svg--words {
-      display: inherit; } }
-
-
-.c-logo__hidden-text {
-  height: 0; }
 
 /*# sourceMappingURL=maps/style.css.map */
