@@ -92,6 +92,7 @@ SVG's as image files
  <svg class="svg" alt="Facebook"><use xlink:href="../svg/sprite-social.svg#instagram"></use></svg>
 
 ````
+
 #Gulp SVG Tasks#
 
 ````
@@ -110,12 +111,21 @@ See
 5. The svgsprite is named after the folder and is created in the /svg root folder.
 
 
+#Controlling SVG Sizes in CSS#
+
+* It's crazy but in IE all SVG's have a fixes size of 300x150px by default
+* Wrap you SVG in something to control the size
+
 
 http://www.sassmeister.com/gist/5e0ccf832283a5a8dc8f
 
 
 
-http://una.im/svg-icons#💁
+#Controlling SVG Color in CSS#
+
+# Other Approaches and Follow up #
+
+[Una's http://una.im/svg-icons#💁
 
 
 
