@@ -2,7 +2,7 @@
 
 # Let's Get Setup #
 
-Download this link XXXX
+Download this repo to your local machine
 Expand on your local desktop
 
 
@@ -16,7 +16,9 @@ Expand on your local desktop
 ### Eyeglass NPM manager for Sass ###
 * https://github.com/sass-eyeglass/eyeglass
 * Automatically downloads, managed, and inteligently loads required Sass components
-
+### Mainspring Boilerplate for Our Projects ###
+* https://github.com/fosterinteractive/mainspring
+* The SVG lesson today is a smaller component of mainspring
 
 # SVG Intro #
 
